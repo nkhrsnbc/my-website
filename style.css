@@ -1,79 +1,87 @@
-/* style.css */
-
+/* 全体のフォントと背景 */
 body {
-  font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
-  margin: 0;
-  line-height: 1.6;
-  background: #fdfcf9;
-  color: #333;
+    font-family: "Georgia", serif;
+    background-color: #e3d8c3;
+    color: #3b2f2f;
+    margin: 0;
+    padding: 0;
 }
 
+/* ヘッダー */
 header {
-  background: #6b4f3f;
-  color: white;
-  text-align: center;
-  padding: 1.2em;
+    text-align: center;
+    padding: 20px 0;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 1.8em;
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
-nav {
-  margin-top: 0.5em;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
 
 nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
+    text-decoration: none;
+    color: #3b2f2f;
+    font-size: 1.2em;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-section {
-  padding: 2em;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-section h2 {
-  border-bottom: 2px solid #6b4f3f;
-  padding-bottom: 0.3em;
-  margin-bottom: 1em;
-}
-
-img {
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  margin-top: 1em;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  padding: 0.3em 0;
-  border-bottom: 1px dotted #aaa;
-}
-
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 1em;
-  margin-top: 2em;
-}
-
-@media (max-width: 600px) {
-  nav a {
+/* メイン画像 */
+.hero img {
+    width: 90%;
+    max-width: 800px;
     display: block;
-    margin: 0.5em 0;
-  }
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* 情報セクション */
+.info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 20px;
+    gap: 20px;
+}
+
+.info div {
+    flex: 1;
+    min-width: 250px;
+}
+
+.info h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info li {
+    margin-bottom: 5px;
+}
+
+/* ニュース */
+.news {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 1.1em;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #d6c2aa;
+    margin-top: 40px;
 }
